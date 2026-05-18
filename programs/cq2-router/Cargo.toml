@@ -1,0 +1,48 @@
+[package]
+name = "cq2-router"
+version = "0.3.0"
+edition = "2021"
+description = """
+cq2 on-chain router. Single dispatcher for every DEX cq2 routes through.
+
+Deployed at the cqXSJi3MdPgPfxKfe86nxrrq6speZP4LTEJ2WUXoSQF vanity address
+(0.3.x redeploy — supersedes the 0.3.0 CQ2yTev deploy after it was closed
+to recover rent and re-vanitied to lowercase cqX prefix). Adds BisonFi + GoonFi V2
+swap variants on top of the previous fleet so cq2 can route a single
+SwapArgs Borsh struct through every leg — Raydium AMM/V2/CP/CLMM/CLMM-V2/
+Stable, Meteora damm/dlmm/dlmm-v2/damm-v2, Orca v1/v2/Whirlpool, Pump AMM
+Buy/Sell, HumidiFi, BisonFi, GoonFi V2 — under one program-id.
+"""
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "cq2_router"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+spl-token-2022 = "0.9.0"
+anyhow = "1.0"
+# solana-security-txt — gives Solscan + explorers the green security.txt
+# badge. Already transitively pulled in via spl-token-2022; declaring it
+# directly so the `security_txt!{}` macro at lib.rs:38 resolves cleanly.
+# Per https://github.com/neodyme-labs/solana-security-txt.
+solana-security-txt = "1.1.1"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+overflow-checks = false
+
+# Detach from the cq2 outer workspace — the on-chain program builds with a
+# pinned solana-program/anchor-lang stack that the workspace pinning would
+# otherwise override.
+[workspace]
