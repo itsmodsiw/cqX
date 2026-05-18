@@ -20,7 +20,7 @@ On chain swap dispatcher used by [cq2](https://carbium.io). One Borsh `SwapArgs`
 | **Version** | 0.3.1 |
 | **Anchor** | 0.29.0 |
 | **Rust toolchain** | 1.90.0 |
-| **sha256 of deployed bytes** | `92490a599c7cf5b0b9b738bab0ffba9aca593cf18542f2c91fe02a8c6bdd46a5` |
+| **sha256 of deployed bytes** | `29e9895a03727df265194f777360db4098d87344306cacd762f3e16901176ffc` |
 
 ## Supported swap variants
 
@@ -89,7 +89,7 @@ solana-verify get-executable-hash target/deploy/cq2_router.so
 solana-verify get-program-hash cqXSJi3MdPgPfxKfe86nxrrq6speZP4LTEJ2WUXoSQF
 ```
 
-Both hashes should match `92490a599c7cf5b0b9b738bab0ffba9aca593cf18542f2c91fe02a8c6bdd46a5`.
+Both hashes should match `29e9895a03727df265194f777360db4098d87344306cacd762f3e16901176ffc`.
 
 ## What is NOT in this repo
 
