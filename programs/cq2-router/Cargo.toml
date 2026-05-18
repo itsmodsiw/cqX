@@ -42,7 +42,3 @@ lto = "fat"
 codegen-units = 1
 overflow-checks = false
 
-# Detach from the cq2 outer workspace — the on-chain program builds with a
-# pinned solana-program/anchor-lang stack that the workspace pinning would
-# otherwise override.
-[workspace]
