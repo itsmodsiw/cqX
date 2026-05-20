@@ -1,0 +1,40 @@
+[package]
+name = "cqX"
+version = "0.2.0"
+edition = "2021"
+description = """
+cqX is the on-chain swap dispatcher for cq2. A single Borsh SwapArgs
+struct routes through every supported DEX under one program id at
+cqXSJi3MdPgPfxKfe86nxrrq6speZP4LTEJ2WUXoSQF. Variants cover Raydium
+AMM/V2/CP/CLMM/CLMM-V2/Stable, Meteora damm/dlmm/dlmm-v2/damm-v2,
+Orca v1/v2/Whirlpool, Pump AMM Buy/Sell, HumidiFi, BisonFi, GoonFi V2,
+AlphaQ and more.
+"""
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "cqx"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+spl-token-2022 = "0.9.0"
+anyhow = "1.0"
+# solana-security-txt gives Solscan and explorers the green security.txt
+# badge. Already transitively pulled in via spl-token-2022; declaring it
+# directly so the `security_txt!{}` macro at lib.rs resolves cleanly.
+# Per https://github.com/neodyme-labs/solana-security-txt.
+solana-security-txt = "1.1.1"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+overflow-checks = false
