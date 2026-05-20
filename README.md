@@ -36,29 +36,29 @@ The `SwapType` enum dispatches to every DEX cq2 routes through. Ordinals are sta
 | Ord | Variant | DEX | Landed tx |
 |---:|---|---|---|
 | 0 | Raydium | Raydium AMM | [`G55sfdaE…`](https://solscan.io/tx/G55sfdaEd1MYaV2onTYYuMcS8QNQTUNVP4YA3jgeTtYKejREFLjRZPSGQCVbBc3mixw542tUKjcqBdoRiXS36a2) |
-| 1 | RaydiumV2 | Raydium AMM v2 | _pending_ |
-| 2 | RaydiumCp | Raydium CPMM | _pending_ |
+| 1 | RaydiumV2 | Raydium AMM v2 | |
+| 2 | RaydiumCp | Raydium CPMM | |
 | 3 | RaydiumClmm | Raydium CLMM | [`3T1pwQKN…`](https://solscan.io/tx/3T1pwQKNmcGxZMZ61adqA2CGSF8D4kAztx2r4E9tyszKkgSDWc842HNw87uhvEnhxACFSSBvVmr1QNgKSjktzVK8) |
-| 4 | RaydiumClmmV2 | Raydium CLMM v2 | _pending_ |
-| 5 | RaydiumStable | Raydium Stable | _pending_ |
-| 6 | Meteora | Meteora DAMM v1 | _pending_ |
-| 7 | MeteoraDlmm | Meteora DLMM | _pending_ |
-| 8 | MeteoraDlmmV2 | Meteora DLMM v2 | _pending_ |
+| 4 | RaydiumClmmV2 | Raydium CLMM v2 | |
+| 5 | RaydiumStable | Raydium Stable | |
+| 6 | Meteora | Meteora DAMM v1 | |
+| 7 | MeteoraDlmm | Meteora DLMM | |
+| 8 | MeteoraDlmmV2 | Meteora DLMM v2 | |
 | 9 | MeteoraDammV2 | Meteora DAMM v2 | [`3FDaJidr…`](https://solscan.io/tx/3FDaJidrzcUCnjfoEiYQVTkMa7MMvY9E6CQSVXu2YpVY3yy9ViBCfSYGL7YU2wBUqqgTyjcQHKQw6XXVWE5f8B54) |
 | 10 | WhirlpoolS2 | Orca Whirlpool | [`G55sfdaE…`](https://solscan.io/tx/G55sfdaEd1MYaV2onTYYuMcS8QNQTUNVP4YA3jgeTtYKejREFLjRZPSGQCVbBc3mixw542tUKjcqBdoRiXS36a2) |
-| 11 | OrcaV1S | Orca v1 | _pending_ |
+| 11 | OrcaV1S | Orca v1 | |
 | 12 | OrcaV2S | Orca v2 | [`G55sfdaE…`](https://solscan.io/tx/G55sfdaEd1MYaV2onTYYuMcS8QNQTUNVP4YA3jgeTtYKejREFLjRZPSGQCVbBc3mixw542tUKjcqBdoRiXS36a2) |
-| 13 | PumpAmmBuyExactQuoteIn | Pump AMM (buy) | _pending_ |
-| 14 | PumpAmmSell | Pump AMM (sell) | _pending_ |
+| 13 | PumpAmmBuyExactQuoteIn | Pump AMM (buy) | |
+| 14 | PumpAmmSell | Pump AMM (sell) | |
 | 15 | HumidiFi | HumidiFi | [`5zFGxyHt…`](https://solscan.io/tx/5zFGxyHtJTyWdqvufsQMFC3bMC2amAJC78FC6AZhMHrv9ogEWjEN6RLP9bz97uCmiHBX9YBZ63sBLNnr4KWF2WX7) |
 | 16 | _DeadOrd16 | reserved | _n/a_ |
 | 17 | GoonfiV2 | GoonFi v2 | [`5Km794yX…`](https://solscan.io/tx/5Km794yXHWUxnCGnRnvUTS5PsNdLSBGkikarAnkLXQuhCdJg7qNPf5bcZQnaQgQixHi1WJWEkxbGrJuNpBE2LqhP) |
 | 18 | AlphaQ | AlphaQ | [`66uLaQZQ…`](https://solscan.io/tx/66uLaQZQniMSLACGihQGrGAJb1uZJsdv7UktMHwA9kgypNPwT4RK6QKcgkorDzLMP1dimuZZG6zAkpQ2erFx2vRG) |
 | 19 | SanctumLstSwap | Sanctum LST · SPL Stake Pool · SanctumSpl · SanctumSplMulti | [`2MYU7UkV…`](https://solscan.io/tx/2MYU7UkVkoTKPztKHS31gFwiDctFHJgCXu3YJUgYdehTkxCZLXtBTk1pLQHZdJcBGNjhNReFPJRF74pXEvdT21v1) |
 | 20 | ManifestSwapV2 | Manifest | [`3m3odY8b…`](https://solscan.io/tx/3m3odY8bcqUS7dCha9DCJf7XjxfrtmeqZWpnhFkmYcmap5NhEWPjNrcjjZP4dyqhzS8sMKFNE7ZdB6MnMW1fqNcA) |
-| 21 | SolfiV2 | SolFi v2 | _pending_ |
-| 22 | TesseraV | TesseraV | _pending_ |
-| 23 | ZeroFi | ZeroFi | _pending_ |
+| 21 | SolfiV2 | SolFi v2 | |
+| 22 | TesseraV | TesseraV | |
+| 23 | ZeroFi | ZeroFi | |
 | 24 | PancakeswapV3 | PancakeSwap v3 | [`w7SeJszo…`](https://solscan.io/tx/w7SeJszoxWdXiJNQ9SwSJTiKcAo13KvAQKzDEueXuisKQjKLsKK6XR3jr1yR811ccEj8KAPjrR7hiptM8FTjD8C) |
 | 25 | Byreal | Byreal CLMM | [`2ZtbEvwd…`](https://solscan.io/tx/2ZtbEvwdPLUiYi1p1K3ejd7ErzH7vC9Eu8YvrBQJ8Zi7vsZho7vYPFafFJwcL9jL1Ke1Np3dMXGR123UFAqLgL4n) |
 
